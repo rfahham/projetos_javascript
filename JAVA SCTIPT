@@ -1,0 +1,26 @@
+JAVA SCRIPT
+
+Flavio Henrique de Souza Almeida
+@flaviohalmeida
+Bacharel em Informática e em... Psicologia! Grande entusiasta da MEAN Stack.
+
+
+
+Declaração de Variável
+	var nome = "Regina"; // texto, ou tecnicamente falando, uma string
+	var idade = 22; // número
+	var temCarteira = true; // booleano
+
+ARRAY
+	var coisas = ["Gisele", 12, true];
+	var pizzas = ["Portuguesa", "Mussarela", "Atum", "Margherita" ];
+
+
+Para saber o tamanho do array usa-se "variavel que recebe o array.length"
+
+EX.: coisas.length, pizzas.length
+
+
+
+
+

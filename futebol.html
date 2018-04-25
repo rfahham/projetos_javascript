@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Alex+Brush" rel="stylesheet"> -->
+
+    <title>Lógica de Programação - JavaScript</title>
+  </head>
+<body>
+	<!-- <style type="text/css">
+		body {
+			/*font-family: 'Alex Brush', cursive;*/
+			/*font-family: 'Chewy', cursive;*/
+			font-family: 'Varela', sans-serif;
+		}
+	</style> -->
+
+	<div class="container">
+	<h1>Lógica de Programação - JavaScript</h1>
+
+	<script type="text/javascript">
+
+    // FUNCÕES 
+
+
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function calculaImc(altura, peso) {
+        var imc = peso / (altura * altura);
+        return imc;
+    }
+
+    // CÓDIGO
+
+    var time = prompt("Qual é o seu time? ");
+    mostra("O " + time + " tem:")
+    
+    var vitorias = parseInt(prompt("Entre com o número de vitórias:"));
+    mostra(vitorias + " Vitórias");
+    
+    var empates = parseInt(prompt("Entre com o número de empates:"));
+    mostra(empates + " Empates"); 
+    
+    var derrotas = parseInt(prompt("Entre com o número de derrotas:"));
+    mostra(derrotas + " Derrotas"); 
+    
+    var pontos = (vitorias * 3) + empates;
+    mostra("Seu time tem : " + pontos + " pontos");
+
+
+    if(pontos > 28) {
+        mostra("Nosso time está indo MELHOR que o ano passado!");
+}
+    if(pontos < 28) {
+        mostra("Nosso time está indo PIOR que o ano passado!");
+}
+    if(pontos == 28) {
+        mostra("Nosso time está EMPATADO com o ano passado!");
+}
+    if (true) {}
+        mostra("");
+
+
+
+    // Converter texto em número
+
+    // "10" é um texto porque está entre aspas
+    // 10 não é um tespo porque não está entre aspas
+
+    // usar parseInt()
+
+
+
+	</script>
+
+	</div>
+
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+</body>
+</html>

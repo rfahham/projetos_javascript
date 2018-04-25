@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Alex+Brush" rel="stylesheet"> -->
+
+    <title>Lógica de Programação - JavaScript</title>
+  </head>
+<body>
+	<!-- <style type="text/css">
+		body {
+			/*font-family: 'Alex Brush', cursive;*/
+			/*font-family: 'Chewy', cursive;*/
+			font-family: 'Varela', sans-serif;
+		}
+	</style> -->
+
+	<div class="container">
+	<h1>Cadastro de Usuário</h1>
+
+    <form data-toggle="validator" id="formValidator" name="formExemplo" role="form">
+        <div class="form-group">
+            <label class="control-label" for="textNome">Nome</label> <input class="form-control" id="textNome" placeholder="Digite seu Nome..." type="text">
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="inputEmail">Email</label> <input class="form-control" id="inputEmail" placeholder="Digite seu E-mail" type="email">
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="inputPassword">Senha</label> <input class="form-control" id="inputPassword" placeholder="Digite sua Senha..." type="password">
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="inputConfirm">Confirme a Senha</label> <input class="form-control" id="inputConfirm" placeholder="Confirme sua Senha..." type="password">
+        </div>
+        <div class="checkbox">
+            <label><input type="checkbox"> Marque este item.</label>
+        </div><button class="btn btn-primary" type="submit">Enviar</button>
+    </form>
+</body>
+</html>
+
+
+	<script type="text/javascript">
+
+    // FUNCÕES 
+
+    
+
+    // CÓDIGO
+
+    var form = document.getElementById('formValidator');
+    var nome = document.getElementById('textNome');
+    var email = document.getElementById('inputEmail');
+    var senha = document.querySelector('inputPassword');
+    var confirma = document.querySelector('inputConfirm');
+
+
+
+
+form.addEventListener('submit', function(e) {
+    alerta o valor do campo
+    alert(nome.value);
+    alert(email.value);
+
+    function verifica() {
+        if(senha.value == confirma.value) {
+        alert("Senha Correta");
+        }
+        else {
+        alert("Senha Incorreta!");
+        }
+        input.value = "";
+        input.focus();
+    }
+
+    alert(senha.value);
+
+
+
+
+	</script>
+
+	</div>
+
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+</body>
+</html>

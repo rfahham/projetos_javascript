@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Alex+Brush" rel="stylesheet"> -->
+
+    <title>counter strike</title>
+  </head>
+<body>
+	
+
+	<div class="container">
+	<h1>O pulso ainda pulsa ...</h1>
+
+    <p>Animação</p>
+
+	<canvas width="600" height="400"></canvas>
+    
+
+	<script type="text/javascript">
+
+
+
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+    pincel.fillStyle = 'lightgray';
+    pincel.fillRect(0, 0, 600, 400);
+
+    function desenhaCirculo(x, y, raio, cor) {
+
+        pincel.fillStyle = cor;
+        pincel.beginPath();
+        pincel.arc(x, y, raio, 0, 2 * Math.PI);
+        pincel.fill();
+    }
+
+    function desenhaTriangulo(x, y, cor) {
+
+        pincel.fillStyle = cor;
+        pincel.beginPath();
+        pincel.moveTo(315, 230);
+        pincel.lineTo(315, 230);
+        pincel.lineTo(200, 230);
+        pincel.fill();
+    }
+
+
+
+    function limpaTela() {
+
+        pincel.clearRect(0, 0, 600, 400);
+    }
+
+    var raio = 19;
+
+    var fatorCrescimento = 0;
+
+    function atualizaTela() {
+
+        limpaTela();
+
+        if(raio > 30) {
+            fatorCrescimento = -1;
+        } else if (raio < 20) {
+            fatorCrescimento = 1;
+        }
+
+        raio = raio + fatorCrescimento;
+
+        desenhaCirculo(300, 200, raio, 'red');
+        desenhaCirculo(330, 200, raio, 'red');
+        desenhaCirculo(315, 230, raio, 'red');
+
+
+
+    }
+
+    setInterval(atualizaTela, 20);
+
+</script>
+
+
+	</div>
+
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+  
+</body>
+</html>
