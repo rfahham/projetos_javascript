@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin-left: 50px;
+            margin-right: 50px;
+            background-color: rgb(207, 204, 204);
+        }
+    </style>
+</head>
+<body>
+    <h1>Busca por termos ofensivos</h1>
+    <input id="search" style="width: 100px">
+    <input id="button" type="button" value="Search" onclick="count()">
+    <br>
+    <span id="result"></span>
+    <script>
+        let array = ["Adam", "Seth", "Adam", "Eve", "Seth", "Adam", "Rick", "Peter", "Tony"];
+        let src = document.getElementById("search");
+        let rslt = document.getElementById("result");
+        function count() {
+            let count =0;
+                for (let i = 0; i < array.length; i++){
+                    if (src.value == array[i]) {
+                        count++;
+                    }
+                }
+                rslt.innerText = "Count: " + count;
+        }
+
+    </script>
+</body>
+</html>
