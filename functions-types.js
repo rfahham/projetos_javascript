@@ -8,7 +8,7 @@
 //     return a + b;
 // }
 
-//arrow function
-const soma = (a, b) => a + b;
+//arrow function ES6
+const addition = (a, b) => a + b;
 
-console.log(soma(15, 15))
+console.log(addition(15, 15))
