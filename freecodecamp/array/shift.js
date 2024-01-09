@@ -7,6 +7,9 @@ const myArray = [["John", 23], ["dog", 3]];
 
 console.log(myArray)
 
+// [ [ 'John', 23 ], [ 'dog', 3 ] ]
+
 const removedFromMyArray = myArray.shift();
 
 console.log(removedFromMyArray)
+// [ 'John', 23 ]
