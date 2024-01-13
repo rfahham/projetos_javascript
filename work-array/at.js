@@ -10,3 +10,4 @@ console.log('------------------------------------------------')
 console.log('Lista do array usando forEach:')
 bikes.forEach(x => console.log(x))
 console.log('------------------------------------------------')
+

@@ -19,5 +19,14 @@ console.log('------------------------------------------------')
 console.log('Imprimindo a lista completa do array:')
 list.forEach(x => console.log(x))
 
+
+console.log('------------------------------------------------')
+console.log('Imprimindo o primeiro item da lista do array:')
+console.log(list[0])
+
+console.log('------------------------------------------------')
+console.log('Imprimindo o último item da lista do array:')
+console.log(list.at(-1))
+
 // $ node forEach.js
 

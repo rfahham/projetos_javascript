@@ -1,5 +1,7 @@
 const date = new Date();
+// console.log(date)
 const week_day = date.getDay();
+// console.log(week_day)
 let week_day_str = "";
 
 switch(week_day) {
