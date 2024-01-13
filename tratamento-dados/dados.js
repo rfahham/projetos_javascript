@@ -1,7 +1,7 @@
 // abrir o terminal e executar o node
 
 nome = 'Ricardo'
-idade = '51'
+idade = '53'
 nota = 7.0
 
 // Concatenação

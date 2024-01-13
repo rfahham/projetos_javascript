@@ -4,6 +4,9 @@ const week_day = date.getDay();
 // console.log(week_day)
 let week_day_str = "";
 
+console.log("Dia da Semana")
+console.log("-------------")
+
 switch(week_day) {
     case 0:
         week_day_str = "Hoje é Domingo";

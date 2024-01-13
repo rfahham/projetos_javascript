@@ -20,8 +20,9 @@
     </style>
 </head>
 <body>
-    <h1> Olá Mundo !!!</h1>
-    <p>Hello World !!!</p>
+    <h1> RWF SOLUTIONS</h1>
+    <p>Bem-Vindo !!</p>
+    <p id="dia"></p>
 
     <script>
         // var n1 = Number(window.prompt('Digite o primeiro número: '))
@@ -30,9 +31,48 @@
         // window.alert(`A soma entre ${n1} e ${n2} é igual a ${soma}`)
         // document.write(`A soma entre ${n1} e ${n2} é igual a ${soma}`)
 
-        var nome = window.prompt('Seu nome: ')
-        var sobrenome = window.prompt('Seu sobrenome: ')
+        var nome = window.prompt('First name: ')
+        var sobrenome = window.prompt('Last name: ')
         document.write(`Seu nome é ${nome} ${sobrenome}`)
+
+
+        // data
+
+        var day;
+        const date = new Date();
+        // console.log(date)
+        const week_day = date.getDay();
+        // console.log(week_day)
+        let week_day_str = "";
+	
+        switch(week_day) {
+        case 0:
+            week_day_str = "Hoje é Domingo";
+            break;
+        case 1:
+            week_day_str = "Hoje é Segunda-Feira";
+            break;
+        case 2:
+            week_day_str = "Hoje é Terça-Feira";
+            break;
+        case 3:
+            week_day_str = "Hoje é Quarta-Feira";
+            break;
+        case 4:
+            week_day_str = "Hoje é Quinta-Feira";
+            break;
+        case 5:
+            week_day_str = "Hoje é Sexta-Feira";
+            break;
+        case 6:
+            week_day_str = "Hoje é Sábado";
+            break;
+        default:
+            week_day_str ="Ops !!!";
+            break;
+        }
+
+        document.getElementById("dia").innerHTML = week_day_str
 
     </script>
     
